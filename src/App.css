@@ -16,7 +16,7 @@ body {
 
 .header-container {
   color: white;
-  background: darkred;
+  background: rgb(0, 144, 211);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -51,8 +51,8 @@ body {
 /*Movie Card*/
 
 .movie-card {
-  border-radius: 6px;
-  background: darkred;
+  border-radius: 5px;
+  background: rgb(0, 144, 211);
   position: relative;
   margin: 1rem;
   width: 350px;
@@ -74,7 +74,7 @@ body {
 
 form {
   border-radius: 6px;
-  background-color: darkred;
+  background-color: rgb(0, 144, 211);
   font-size: 20px;
   width: calc(100vw / 1.8);
   margin: auto;
@@ -101,21 +101,36 @@ form > label {
   color: white;
   margin: 15px;
   cursor: pointer;
-  border-radius: 4px;
-  background: gray;
+  background: rgb(40, 56, 90);
   width: 100px;
-  border: 0.5px solid rgba(0, 0, 0, 0.37);
+  border: none;
   padding: 0.5rem 1rem;
 }
 
 .btn-danger {
   color: white;
-  background: darkred;
+  background: rgb(180, 10, 10);
+  outline: 0;
+  margin: 15px;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  padding: 0.5rem 1rem;
 }
 
+.btn-normal {
+  color: white;
+  background: rgb(10, 180, 75);
+  outline: 0;
+  margin: 15px;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  padding: 0.5rem 1rem;
+}
 .btn-primary {
   color: white;
-  background: darkred;
+  background: rgb(0, 144, 211);
 }
 
 .add-movie-btn {
@@ -146,4 +161,25 @@ form > label {
   form {
     width: calc(100vw / 3);
   }
+}
+.modal-btn{
+  outline: 0;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: rgb(0, 144, 211);
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+
+}
+.searchTitle{
+  padding: 20px 0;
+  color: white;
+}
+.formsearch{
+  width: 100%;
+  border-radius: 0;
+  margin: 20px auto 0;
+  padding: 20px 25%;
 }

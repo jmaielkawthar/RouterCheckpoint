@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import StarRating from "./StarRating";
+import StarRating from "./Rating";
 
 const EditMovie = ({movie,handleEdit}) => {
   const [name, setName] = useState(movie.name);
@@ -45,7 +45,7 @@ const EditMovie = ({movie,handleEdit}) => {
   }
   return (
     <div>
-      <button onClick={openModal} className='btn'>Edit </button>
+      <button onClick={openModal} className="btn-normal">Edit </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
